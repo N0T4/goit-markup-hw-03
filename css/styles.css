@@ -162,12 +162,14 @@ display: flex;
 gap: 40px;
 }
 .body-nav{
+
     padding-top: 96px;
     padding-bottom: 72px;
     display: flex;
     gap: 24px;
 }
 .features{
+    padding-top: 120px;
     display: flex;
     justify-content: space-between;
     padding-bottom: 120px;
