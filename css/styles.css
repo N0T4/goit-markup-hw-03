@@ -66,13 +66,7 @@ body{
 
     text-align: start;
 }
-.container-button{
-    justify-content: center;
-    display: flex;
 
-    margin-bottom: 76px;
-
-}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -143,6 +137,7 @@ body{
         color: #FFFFFF;
     }
 .title{
+    margin-top: o;
     font-family: 'Roboto';
         font-style: normal;
         font-weight: 500;
@@ -180,7 +175,10 @@ display: flex;
 gap: 40px;
 }
 .body-nav{
-
+    justify-content: center;
+        display: flex;
+    
+        margin-bottom: 72px;
     display: flex;
     gap: 24px;
 }
@@ -236,8 +234,8 @@ gap: 40px;
 .project,
 .sub-info,
 .foot-text,
-.title,
 .information{
+    margin-top: 8px;
     font-family: 'Roboto';
         font-style: normal;
         font-size: 16px;
