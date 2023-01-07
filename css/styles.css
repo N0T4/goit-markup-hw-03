@@ -6,26 +6,19 @@
     --color-second-white: #F4F4FD;
 }
 
-html {
-    box-sizing: border-box;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: inherit;
-}
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
+    font-family: 'Roboto', sans-serif;
     background: white;
 }
 
-.header {}
+.header {
+    border: 1px solid #E7E9FC;
+}
 
 .container {}
 
@@ -89,6 +82,16 @@ body {
     overflow: hidden;
 }
 
+.sub-info {
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 8px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #434455;
+
+}
+
 .logo1 {
     text-decoration: none;
     font-family: "Raleway";
@@ -116,15 +119,17 @@ body {
 }
 
 .img {
+
+    margin: 0px;
     display: block;
 }
 
 .sub-hero {
     margin-bottom: 72px;
     text-align: center;
-    font-family: 'Roboto';
+
     font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 36px;
     line-height: 40px;
 
@@ -143,7 +148,7 @@ body {
 .hero {
     margin-bottom: 48px;
     text-align: center;
-    font-family: 'Roboto';
+
     font-style: normal;
     font-weight: 500;
     font-size: 56px;
@@ -153,8 +158,16 @@ body {
     color: #FFFFFF;
 }
 
+h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+
+    letter-spacing: 0.02em;
+}
+
 .title-port {
-    font-family: 'Roboto';
+
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -165,7 +178,7 @@ body {
 
 .title {
     margin-bottom: 8px;
-    font-family: 'Roboto';
+
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -232,8 +245,6 @@ body {
 .project-port {
     background: #FFFFFF;
     width: 360px;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    font-family: 'Roboto';
     font-weight: 500;
     color: var(--color-brend2);
 }
@@ -256,28 +267,27 @@ body {
 .list-project,
 .features,
 .description-list {
+    font-weight: 400;
+    font-size: 16px;
     list-style: none;
 }
 
 .review {
+    border-radius: 0px 0px 4px 4px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    ;
 
-    padding: 32px 64px;
     text-align: center;
-
 }
 
-.sub-info {
-    margin-top: 8px;
-}
 
 .link,
 .phone,
 .project,
-.sub-info,
 .foot-text,
 .information {
-    font-family: 'Roboto';
-    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
 }
@@ -301,7 +311,6 @@ body {
 .phone {
     display: block;
     padding: 24px 0px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -314,12 +323,6 @@ body {
 }
 
 .button {
-    box-sizing: border-box;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     padding: 8px 16px;
 
     background: #F4F4FD;
@@ -329,12 +332,18 @@ body {
 
     font-weight: 500;
     color: var(--color-brend);
-    background-color: var(--color-button);
     cursor: pointer;
+
+    font-family: inherit;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
 }
 
 .button:hover,
 button:focus {
+    border: 1px solid var(--color-brend);
     color: #FFFFFF;
     background-color: var(--color-brend);
 }
@@ -368,6 +377,9 @@ button:focus {
 }
 
 .review-prot {
+    border-left: 1px solid #E7E9FC;
+    border-right: 1px solid #E7E9FC;
+    border-bottom: 1px solid #E7E9FC;
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
@@ -377,28 +389,17 @@ button:focus {
 
 .project {
 
-
     background: #FFFFFF;
 
+
+
     border: 0.5px solid #F4F4FD;
+    border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-    font-family: 'Roboto';
-    font-weight: 500;
+
     color: var(--color-brend2);
 }
 
-.sub-info {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-
-
-    letter-spacing: 0.02em;
-
-    color: #434455;
-}
 
 .footer {
     padding-top: 100px;
@@ -411,6 +412,7 @@ button:focus {
 }
 
 .foot-text {
+    letter-spacing: 0.02em;
     margin-top: 16px;
     max-width: 264px;
     color: var(--color-button);
